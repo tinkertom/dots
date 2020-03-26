@@ -26,7 +26,7 @@ dark-gray  = #4B5263
 
 accent     = #ffcc01
 
-[bar/mybar]
+[bar/laptopbar]
 width = 100%
 height = 20
 
@@ -40,13 +40,37 @@ module-margin-right = 1
 modules-left = workspace title
 modules-right = wireless-network battery volume clock
 
-font-0 = SF Pro Text:style=Regular:size=10;3
-font-1 = SF Pro Text:style=Bold:size=10;3
-font-2 = SF Mono:style=Bold:size=10;2
-font-3 = Font Awesome 5 Free:style=Solid:size=10;2
-font-4 = Font Awesome 5 Free:style=Solid:size=11;3
-font-5 = Font Awesome 5 Free:style=Solid:size=7;2
-font-6 = Font Awesome 5 Free:style=Regular:size=10;2
+font-0 = sf pro text:style=medium:size=10:antialias=true:autohint=true;3
+font-1 = sf pro text:style=bold:size=10:antialias=true:autohint=true;3
+font-2 = sf mono:style=regular:size=10:antialias=true:autohint=true;2
+font-3 = font awesome 5 free:style=solid:size=10;2
+font-4 = font awesome 5 free:style=solid:size=11;3
+font-5 = font awesome 5 free:style=solid:size=7;2
+font-6 = font awesome 5 free:style=regular:size=10;2
+
+wm-restack = bspwm
+
+[bar/desktopbar]
+width = 100%
+height = 20
+
+background = ${colors.black}
+foreground = ${colors.white}
+border-size = 4
+border-color = ${colors.black}
+
+module-margin-right = 1
+
+modules-left = workspace title
+modules-right = volume clock
+
+font-0 = sf pro text:style=medium:size=10:antialias=true:autohint=true;3
+font-1 = sf pro text:style=bold:size=10:antialias=true:autohint=true;3
+font-2 = sf mono:style=regular:size=10:antialias=true:autohint=true;2
+font-3 = font awesome 5 free:style=solid:size=10;2
+font-4 = font awesome 5 free:style=solid:size=11;3
+font-5 = font awesome 5 free:style=solid:size=7;2
+font-6 = font awesome 5 free:style=regular:size=10;2
 
 wm-restack = bspwm
 
@@ -175,7 +199,7 @@ bar-volume-format    = %{B#bfc7d5}%{T3} %{F#292d3e}%fill%%indicator%%{F#697098}%
 bar-volume-width     = 8
 bar-volume-fill      = ─
 bar-volume-indicator = |
-bar-volume-empty     = -
+bar-volume-empty     = ─
 
 click-right = pavucontrol-qt &
 
